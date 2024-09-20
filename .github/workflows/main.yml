@@ -1,0 +1,12 @@
+name: main
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extend the workflow duration by an additional 300 seconds.
+        run: sleep 300
